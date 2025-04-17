@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>+||- Grand</h1>
+    </header>
+    <main>
+        <section>
+            <div id="headerGame">
+                <p>Score min :<span id="result">0</span></p>
+                <h2>Jeu de devinette</h2>
+                <p>Score : <span id="score">0</span></p>
+            </div>
+            <p>Devinez le nombre entre 1 et 100 !</p>
+            <div class="form-group">
+                <label for="guess">Entrez votre nombre</label>
+                <input type="number" name="guess" id="guess" min="1" max="100">
+            </div>
+            <div id="buttons">
+                <button id="submit" class="hoverables" onclick="valid()">Soumettre</button>
+
+                <button id="reset" class="" onclick="resetGame()" disabled>Réinitialiser</button>
+
+            </div>
+            <p id="message"></p>
+            <p id="alert" style="color: red;"></p>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+::selection {
+    background-color: blueviolet;
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+    height: 100px;
+    width: 99%;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);                                       
+}
+
+
+
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+section {
+    height: 80%;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#headerGame {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#headerGame h2 {
+    grid-column: 2;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+#headerGame p {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+#headerGame p span {
+    margin: 2px;
+}
+
+
+section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 80%;
+    height: 30px;
+    max-width: 150px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:is(:hover, :focus) {
+    background-color: #f0f0f0;
+    border-color: blueviolet;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+#submit, #reset {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 50%;
+    cursor: pointer;
+    transition: .5s;
+    margin: 20px auto;
+    display: block;
+}
+
+#reset {
+    cursor: not-allowed;
+}
+
+#submit.hoverables:hover, #reset.hoverables:hover {
+    background-color: transparent;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+}
